@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_horizontal_margin">
+
+    <Button
+        android:id="@+id/command1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="#ffffff"
+        android:text="Transition"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@+id/command2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:text="Shared Element"
+        android:transitionName="title" />
+
+    <Button
+        android:id="@+id/command3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@+id/command4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:id="@+id/command5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:elevation="4dp"
+        android:backgroundTint="#ffffff"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" />
+</LinearLayout>
