@@ -21,7 +21,7 @@
         android:backgroundTint="#ffffff"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:text="Shared Element"
-        android:transitionName="title" />
+        android:transitionName="transition:title" />
 
     <Button
         android:id="@+id/command3"

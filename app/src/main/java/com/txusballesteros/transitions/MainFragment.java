@@ -8,6 +8,7 @@ import android.support.v4.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 public class MainFragment extends Fragment {
     public static Fragment getFragment() {
@@ -38,15 +39,17 @@ public class MainFragment extends Fragment {
     }
 
     private void runCommand1() {
-        Intent intent = new Intent(getActivity(), Command1Activity.class);
+        Button sharedVew = (Button)getView().findViewById(R.id.command1);
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(DetailActivity.EXTRA_TITLE, sharedVew.getText());
         Navigator.navigateTo(getActivity(), intent);
     }
 
     private void runCommand2() {
-        View sharedVew = getView().findViewById(R.id.command2);
+        Button sharedVew = (Button)getView().findViewById(R.id.command2);
         Pair sharedElement = new Pair<>(sharedVew, sharedVew.getTransitionName());
-
-        Intent intent = new Intent(getActivity(), Command1Activity.class);
+        Intent intent = new Intent(getActivity(), DetailActivity.class);
+        intent.putExtra(DetailActivity.EXTRA_TITLE, sharedVew.getText());
         Navigator.navigateTo(getActivity(), intent, sharedElement);
     }
 }
